@@ -6,6 +6,20 @@
 adb -s 设备ID install apk路径
 ```
 
+## 安装aab包
+
+首先你得有Java的环境，然后还要去[https://github.com/google/bundletool/releases](https://github.com/google/bundletool/releases)下载一个jar包
+
+然后将你的**aab包**，**.jks文件**，和上面下载的jar包放到同一目录下（当然，不放在一起也行。。）
+
+然后在小黑块中进入这个目录执行：
+
+```
+java -jar bundletool-all-1.13.0.jar build-apks --bundle=./xxx.aab --output=./app-dubug.apks --ks=./xxx.jks --ks-pass=pass:xxx --ks-key-alias=xxxx --key-pass=pass:xxx --connected-device
+
+java -jar bundletool-all-1.13.0.jar install-apks --apks=./app-dubug.apks
+```
+
 ## android自适应横屏
 
 ```xml
