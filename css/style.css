@@ -1,0 +1,39 @@
+article, footer, header, menu, nav, section { 
+    display: block; 
+}
+
+body{
+    color: #DEDEDE;
+}
+
+body a{
+    text-decoration: underline;
+    color: #989ca0;
+}
+
+#leftArea {
+    background-color: #2E3033;
+    bottom: 0px;
+    left: 0px;
+    overflow: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    position: absolute;
+    right: auto;
+    text-align: left;
+    top: 0em;
+    width: 230px;
+}
+
+#rightArea {
+    background-color:#363B40;
+    bottom:0px;
+    left:230px;
+    overflow:auto;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    position:absolute;
+    right:0px;
+    text-align:left;
+    top:0em;
+}
